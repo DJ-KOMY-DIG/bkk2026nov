@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BKK, the Land of Smiles</title>
+    <style>
+        :root {
+            --bg-color: #f4f6f9;
+            --card-bg: #ffffff;
+            --text-color: #2c3e50;
+            --accent-color: #2b5b84;
+        }
+        body {
+            font-family: 'Segoe UI', Meiryo, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 24px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 12px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+        }
+        .count {
+            font-size: 0.95rem;
+            color: #666;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+        }
+        .thumb-wrapper {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #000;
+            overflow: hidden;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            pointer-events: none;
+        }
+        .play-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.25);
+            color: #fff;
+            font-size: 2.2rem;
+            opacity: 0;
+            transition: opacity 0.15s ease;
+        }
+        .card:hover .play-overlay {
+            opacity: 1;
+        }
+        .title {
+            padding: 12px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            line-height: 1.4;
+            word-break: break-all;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bangkok, the Land of Smiles</h1>
+        <span class="count">全 38 件</span>
+    </header>
+    <div class="grid">
+        
+        <a class="card" href="Video/20261106_001_%E7%A9%BA%E6%B8%AF%E3%81%A7%E7%89%87%E5%B1%B1%E3%81%95%E3%82%93%E5%BE%85%E3%81%A1%E4%BB%B2%E8%B0%B7%E3%81%AE%E6%AC%A0%E4%BC%B8.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261106_001_%E7%A9%BA%E6%B8%AF%E3%81%A7%E7%89%87%E5%B1%B1%E3%81%95%E3%82%93%E5%BE%85%E3%81%A1%E4%BB%B2%E8%B0%B7%E3%81%AE%E6%AC%A0%E4%BC%B8.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261106_001_空港で片山さん待ち仲谷の欠伸">20261106_001_空港で片山さん待ち仲谷の欠伸</div>
+        </a>
+        <a class="card" href="Video/20261106_002_%E3%83%97%E3%83%AB%E3%83%B3%E3%83%81%E3%83%83%E3%83%88%E6%B6%B2%E3%81%8B%E3%82%89.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261106_002_%E3%83%97%E3%83%AB%E3%83%B3%E3%83%81%E3%83%83%E3%83%88%E6%B6%B2%E3%81%8B%E3%82%89.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261106_002_プルンチット液から">20261106_002_プルンチット液から</div>
+        </a>
+        <a class="card" href="Video/20261106_003_%E3%82%BB%E3%83%B3%E3%83%88%E3%83%A9%E3%83%AB%E3%82%A8%E3%83%B3%E3%83%90%E3%82%B7%E3%83%BC.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261106_003_%E3%82%BB%E3%83%B3%E3%83%88%E3%83%A9%E3%83%AB%E3%82%A8%E3%83%B3%E3%83%90%E3%82%B7%E3%83%BC.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261106_003_セントラルエンバシー">20261106_003_セントラルエンバシー</div>
+        </a>
+        <a class="card" href="Video/20261107_001_%E3%83%97%E3%83%A9%E3%82%AB%E3%83%8E%E3%83%B3%E5%B8%82%E5%A0%B4.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261107_001_%E3%83%97%E3%83%A9%E3%82%AB%E3%83%8E%E3%83%B3%E5%B8%82%E5%A0%B4.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261107_001_プラカノン市場">20261107_001_プラカノン市場</div>
+        </a>
+        <a class="card" href="Video/20261107_002_%E3%83%97%E3%83%A9%E3%82%AB%E3%83%8E%E3%83%B3%E5%B8%82%E5%A0%B4.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261107_002_%E3%83%97%E3%83%A9%E3%82%AB%E3%83%8E%E3%83%B3%E5%B8%82%E5%A0%B4.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261107_002_プラカノン市場">20261107_002_プラカノン市場</div>
+        </a>
+        <a class="card" href="Video/20261107_003_%E3%83%90%E3%83%BC%E3%83%B3%E3%83%BB%E3%83%91%E3%82%A4%E9%9B%A8.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261107_003_%E3%83%90%E3%83%BC%E3%83%B3%E3%83%BB%E3%83%91%E3%82%A4%E9%9B%A8.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261107_003_バーン・パイ雨">20261107_003_バーン・パイ雨</div>
+        </a>
+        <a class="card" href="Video/20261107_004%E9%A7%85.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261107_004%E9%A7%85.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261107_004駅">20261107_004駅</div>
+        </a>
+        <a class="card" href="Video/20261108_001_%E3%82%AF%E3%83%AD%E3%83%B3%E3%83%88%E3%83%BC%E3%82%A4%E6%AD%A9%E9%81%93%E6%A9%8B.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261108_001_%E3%82%AF%E3%83%AD%E3%83%B3%E3%83%88%E3%83%BC%E3%82%A4%E6%AD%A9%E9%81%93%E6%A9%8B.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261108_001_クロントーイ歩道橋">20261108_001_クロントーイ歩道橋</div>
+        </a>
+        <a class="card" href="Video/20261108_002_%E3%82%AF%E3%83%AD%E3%83%B3%E3%83%88%E3%83%BC%E3%82%A4%E5%B8%82%E5%A0%B4.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261108_002_%E3%82%AF%E3%83%AD%E3%83%B3%E3%83%88%E3%83%BC%E3%82%A4%E5%B8%82%E5%A0%B4.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261108_002_クロントーイ市場">20261108_002_クロントーイ市場</div>
+        </a>
+        <a class="card" href="Video/20261108_003_%E3%82%AF%E3%83%AD%E3%83%B3%E3%83%88%E3%83%BC%E3%82%A4%E5%B8%82%E5%A0%B4.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261108_003_%E3%82%AF%E3%83%AD%E3%83%B3%E3%83%88%E3%83%BC%E3%82%A4%E5%B8%82%E5%A0%B4.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261108_003_クロントーイ市場">20261108_003_クロントーイ市場</div>
+        </a>
+        <a class="card" href="Video/20261108_004_%E3%82%AF%E3%83%AD%E3%83%B3%E3%83%88%E3%83%BC%E3%82%A4%E5%B8%82%E5%A0%B4.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261108_004_%E3%82%AF%E3%83%AD%E3%83%B3%E3%83%88%E3%83%BC%E3%82%A4%E5%B8%82%E5%A0%B4.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261108_004_クロントーイ市場">20261108_004_クロントーイ市場</div>
+        </a>
+        <a class="card" href="Video/20261108_005_%E9%9B%A8%E3%81%AE%E3%83%8A%E3%83%8A.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261108_005_%E9%9B%A8%E3%81%AE%E3%83%8A%E3%83%8A.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261108_005_雨のナナ">20261108_005_雨のナナ</div>
+        </a>
+        <a class="card" href="Video/20261109_001_%E6%9C%9D%E9%A3%9F%E4%BC%9A%E5%A0%B4.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261109_001_%E6%9C%9D%E9%A3%9F%E4%BC%9A%E5%A0%B4.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261109_001_朝食会場">20261109_001_朝食会場</div>
+        </a>
+        <a class="card" href="Video/20261109_002_%E3%83%AF%E3%83%83%E3%83%88%E3%83%91%E3%82%AF%E3%83%8A%E3%83%A0.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261109_002_%E3%83%AF%E3%83%83%E3%83%88%E3%83%91%E3%82%AF%E3%83%8A%E3%83%A0.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261109_002_ワットパクナム">20261109_002_ワットパクナム</div>
+        </a>
+        <a class="card" href="Video/20261109_003_%E3%83%AF%E3%83%83%E3%83%88%E3%83%91%E3%82%AF%E3%83%8A%E3%83%A0.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261109_003_%E3%83%AF%E3%83%83%E3%83%88%E3%83%91%E3%82%AF%E3%83%8A%E3%83%A0.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261109_003_ワットパクナム">20261109_003_ワットパクナム</div>
+        </a>
+        <a class="card" href="Video/20261109_004_%E3%83%90%E3%83%BC%E3%83%B3%E3%83%91%E3%82%A4%E9%9B%BB%E8%BB%8A%E5%86%85.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261109_004_%E3%83%90%E3%83%BC%E3%83%B3%E3%83%91%E3%82%A4%E9%9B%BB%E8%BB%8A%E5%86%85.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261109_004_バーンパイ電車内">20261109_004_バーンパイ電車内</div>
+        </a>
+        <a class="card" href="Video/20261109_005_1_%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84%E5%AD%90%E4%BB%B2%E8%B0%B7%E3%81%8C%E9%82%AA%E9%AD%94.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261109_005_1_%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84%E5%AD%90%E4%BB%B2%E8%B0%B7%E3%81%8C%E9%82%AA%E9%AD%94.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261109_005_1_かわいい子仲谷が邪魔">20261109_005_1_かわいい子仲谷が邪魔</div>
+        </a>
+        <a class="card" href="Video/20261109_005_2_%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84%E5%AD%90%E4%BB%B2%E8%B0%B7%E3%81%8C%E9%82%AA%E9%AD%94%EF%BC%88%E6%8B%A1%E5%A4%A7%EF%BC%89.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261109_005_2_%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84%E5%AD%90%E4%BB%B2%E8%B0%B7%E3%81%8C%E9%82%AA%E9%AD%94%EF%BC%88%E6%8B%A1%E5%A4%A7%EF%BC%89.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261109_005_2_かわいい子仲谷が邪魔（拡大）">20261109_005_2_かわいい子仲谷が邪魔（拡大）</div>
+        </a>
+        <a class="card" href="Video/20261109_006_%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84%E5%AD%90.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261109_006_%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84%E5%AD%90.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261109_006_かわいい子">20261109_006_かわいい子</div>
+        </a>
+        <a class="card" href="Video/20261109_007_%E3%82%A8%E3%83%A0%E3%82%AF%E3%82%A6%E3%82%A9%E3%83%BC%E3%83%86.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261109_007_%E3%82%A8%E3%83%A0%E3%82%AF%E3%82%A6%E3%82%A9%E3%83%BC%E3%83%86.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261109_007_エムクウォーテ">20261109_007_エムクウォーテ</div>
+        </a>
+        <a class="card" href="Video/20261109_008_%E3%83%81%E3%83%83%E3%83%88%E3%83%AD%E3%83%A0%E3%81%8B%E3%82%89.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261109_008_%E3%83%81%E3%83%83%E3%83%88%E3%83%AD%E3%83%A0%E3%81%8B%E3%82%89.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261109_008_チットロムから">20261109_008_チットロムから</div>
+        </a>
+        <a class="card" href="Video/20261109_009_%E3%82%A8%E3%83%AF%E3%83%A9%E3%83%B3%E5%8D%BF.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261109_009_%E3%82%A8%E3%83%AF%E3%83%A9%E3%83%B3%E5%8D%BF.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261109_009_エワラン卿">20261109_009_エワラン卿</div>
+        </a>
+        <a class="card" href="Video/20261109_010_%E3%82%A8%E3%83%AF%E3%83%A9%E3%83%B3%E5%8D%BF.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261109_010_%E3%82%A8%E3%83%AF%E3%83%A9%E3%83%B3%E5%8D%BF.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261109_010_エワラン卿">20261109_010_エワラン卿</div>
+        </a>
+        <a class="card" href="Video/20261109_011_%4024%E5%AE%A4%E5%86%85.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261109_011_%4024%E5%AE%A4%E5%86%85.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261109_011_@24室内">20261109_011_@24室内</div>
+        </a>
+        <a class="card" href="Video/20261110_001_%E3%83%A1%E3%83%BC%E3%82%AF%E3%83%AD%E3%83%B3%E5%B8%82%E5%A0%B4.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261110_001_%E3%83%A1%E3%83%BC%E3%82%AF%E3%83%AD%E3%83%B3%E5%B8%82%E5%A0%B4.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261110_001_メークロン市場">20261110_001_メークロン市場</div>
+        </a>
+        <a class="card" href="Video/20261110_002_%E3%83%A1%E3%83%BC%E3%82%AF%E3%83%AD%E3%83%B3%E5%B8%82%E5%A0%B4.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261110_002_%E3%83%A1%E3%83%BC%E3%82%AF%E3%83%AD%E3%83%B3%E5%B8%82%E5%A0%B4.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261110_002_メークロン市場">20261110_002_メークロン市場</div>
+        </a>
+        <a class="card" href="Video/20261110_003_%E3%83%A1%E3%83%BC%E3%82%AF%E3%83%AD%E3%83%B3%E5%B8%82%E5%A0%B4.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261110_003_%E3%83%A1%E3%83%BC%E3%82%AF%E3%83%AD%E3%83%B3%E5%B8%82%E5%A0%B4.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261110_003_メークロン市場">20261110_003_メークロン市場</div>
+        </a>
+        <a class="card" href="Video/20261110_004_%E3%83%A1%E3%83%BC%E3%82%AF%E3%83%AD%E3%83%B3%E5%B8%82%E5%A0%B4.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261110_004_%E3%83%A1%E3%83%BC%E3%82%AF%E3%83%AD%E3%83%B3%E5%B8%82%E5%A0%B4.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261110_004_メークロン市場">20261110_004_メークロン市場</div>
+        </a>
+        <a class="card" href="Video/20261110_005_%E3%83%A1%E3%83%BC%E3%82%AF%E3%83%AD%E3%83%B3%E4%BB%B2%E8%B0%B7.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261110_005_%E3%83%A1%E3%83%BC%E3%82%AF%E3%83%AD%E3%83%B3%E4%BB%B2%E8%B0%B7.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261110_005_メークロン仲谷">20261110_005_メークロン仲谷</div>
+        </a>
+        <a class="card" href="Video/20261110_006_%E3%83%A1%E3%83%BC%E3%82%AF%E3%83%AD%E3%83%B3%E5%B8%82%E5%A0%B4.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261110_006_%E3%83%A1%E3%83%BC%E3%82%AF%E3%83%AD%E3%83%B3%E5%B8%82%E5%A0%B4.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261110_006_メークロン市場">20261110_006_メークロン市場</div>
+        </a>
+        <a class="card" href="Video/20261110_007_%E5%B8%B0%E3%82%8A%E3%81%AE%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%BC%E3%81%8B%E3%82%89.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261110_007_%E5%B8%B0%E3%82%8A%E3%81%AE%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%BC%E3%81%8B%E3%82%89.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261110_007_帰りのタクシーから">20261110_007_帰りのタクシーから</div>
+        </a>
+        <a class="card" href="Video/20261110_008_%E3%82%A8%E3%82%AB%E3%83%9E%E3%82%A4%E3%83%90%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261110_008_%E3%82%A8%E3%82%AB%E3%83%9E%E3%82%A4%E3%83%90%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%9F%E3%83%8A%E3%83%AB.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261110_008_エカマイバスターミナル">20261110_008_エカマイバスターミナル</div>
+        </a>
+        <a class="card" href="Video/20261110_009_W%20MARKET.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261110_009_W%20MARKET.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261110_009_W MARKET">20261110_009_W MARKET</div>
+        </a>
+        <a class="card" href="Video/20261110_010_BTS.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261110_010_BTS.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261110_010_BTS">20261110_010_BTS</div>
+        </a>
+        <a class="card" href="Video/20261110_011_%E3%83%8A%E3%83%8A%E3%81%8B%E3%82%89.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261110_011_%E3%83%8A%E3%83%8A%E3%81%8B%E3%82%89.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261110_011_ナナから">20261110_011_ナナから</div>
+        </a>
+        <a class="card" href="Video/20261110_012_%E3%83%8A%E3%83%8A%E3%83%97%E3%83%A9%E3%81%8B%E3%82%89.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261110_012_%E3%83%8A%E3%83%8A%E3%83%97%E3%83%A9%E3%81%8B%E3%82%89.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261110_012_ナナプラから">20261110_012_ナナプラから</div>
+        </a>
+        <a class="card" href="Video/20261110_013_%E3%83%86%E3%83%BC%E3%83%A1%E3%83%BC%E3%81%BE%E3%81%A7.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261110_013_%E3%83%86%E3%83%BC%E3%83%A1%E3%83%BC%E3%81%BE%E3%81%A7.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261110_013_テーメーまで">20261110_013_テーメーまで</div>
+        </a>
+        <a class="card" href="Video/20261110_014_%E3%82%A2%E3%82%BD%E3%83%BC%E3%82%AF%E9%A7%85.mp4" target="_blank" rel="noopener noreferrer">
+            <div class="thumb-wrapper">
+                <video src="Video/20261110_014_%E3%82%A2%E3%82%BD%E3%83%BC%E3%82%AF%E9%A7%85.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                <div class="play-overlay">?</div>
+            </div>
+            <div class="title" title="20261110_014_アソーク駅">20261110_014_アソーク駅</div>
+        </a>
+    </div>
+</body>
+</html>
